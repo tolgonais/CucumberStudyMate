@@ -1,6 +1,6 @@
 Feature: successfully login to StudyMate
 
-  @regressionTest
+  @loginTest
   Scenario:
     Given the user is on login page
     When the user enters correct <admin@codewise.com> email
