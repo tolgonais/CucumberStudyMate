@@ -71,6 +71,7 @@ public class StudentsPage {
     public WebElement fromShownStudentsToCheck;
 
 
+
     public void createStudent() throws InterruptedException {
         Faker faker = new Faker();
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(5));

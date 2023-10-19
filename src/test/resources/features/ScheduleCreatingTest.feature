@@ -1,5 +1,5 @@
 Feature: creating an event on Schedule page
-  @loginTest
+  @scheduleTest
   @regressionTest
   Scenario:
     Given the user is on Schedule page
