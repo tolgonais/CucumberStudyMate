@@ -25,7 +25,7 @@ public class CoursesPage {
         Faker faker=new Faker();
         courseName.sendKeys(faker.educator().university());
         description.sendKeys(faker.superhero().descriptor());
-        pushclick.click();
+        //pushclick.click();
         pushclick.sendKeys("09/09/2023");
         createButton.click();
         System.out.println("Course is created successfully");

@@ -1,6 +1,7 @@
 Feature: creating an event on Schedule page
   @scheduleTest
   @regressionTest
+
   Scenario:
     Given the user is on Schedule page
     When the user clicks on Create event button

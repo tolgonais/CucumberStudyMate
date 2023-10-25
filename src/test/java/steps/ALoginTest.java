@@ -10,7 +10,7 @@ import pages.LoginPage;
 import utilities.Config;
 import utilities.Driver;
 
-public class LoginTest {
+public class ALoginTest {
     WebDriver driver = Driver.getDriver();
     LoginPage loginPage = new LoginPage();
     CommonPage commonPage = new CommonPage();
