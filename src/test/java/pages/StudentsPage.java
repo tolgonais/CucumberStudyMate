@@ -40,7 +40,7 @@ public class StudentsPage {
     @FindBy(xpath = "//div[@id='mui-component-select-groupId']")
     public WebElement groupDropDown;
 
-    @FindBy(xpath = "//li[text()='Groups - Automation']")
+    @FindBy(xpath = "//li[text()='TestGroup']")
     public WebElement selectDropDown1;
 
     @FindBy(xpath = "//div[@id='mui-component-select-studyFormat']")

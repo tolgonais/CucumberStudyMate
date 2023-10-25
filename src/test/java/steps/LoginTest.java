@@ -11,15 +11,14 @@ import utilities.Config;
 import utilities.Driver;
 
 public class LoginTest {
-    WebDriver driver;
+    WebDriver driver = Driver.getDriver();
     LoginPage loginPage = new LoginPage();
     CommonPage commonPage = new CommonPage();
     @Given("the user is on login page")
     public void the_user_is_on_login_page() {
-        driver = Driver.getDriver();
         driver.get(Config.getProperty("studymateUrl"));
-        String actualURL = driver.getCurrentUrl();
-        Assert.assertEquals(actualURL,Config.getProperty("studymateUrl"));
+        Assert.assertEquals("The titles don't match!", "StudyMate", driver.getTitle());
+        System.out.println("The user is on the right page");
     }
     @When("the user enters correct <admin@codewise.com> email")
     public void the_user_enters_correct_admin_codewise_com_email() {
@@ -34,8 +33,10 @@ public class LoginTest {
         loginPage.loginButton.click();
     }
     @Then("verify the user logs in successfully")
-    public void verify_the_user_logs_in_successfully() {
-        Assert.assertEquals(driver.getCurrentUrl(), commonPage.url);
+    public void verify_the_user_logs_in_successfully() throws InterruptedException {
+        String expectedURL = "https://codewiser.studymate.us/admin/analytics";
+        Thread.sleep(5000);
+        Assert.assertEquals("The user is not logged in!",expectedURL, driver.getCurrentUrl());
     }
 
 }
