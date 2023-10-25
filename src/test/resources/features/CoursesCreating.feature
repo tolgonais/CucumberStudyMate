@@ -1,6 +1,6 @@
 Feature: creating a Course
   @coursesTest
-  @groupTest
+  @regressionTest
   Scenario:
     Given the user is on Course page
     When the user clicks on Create  button

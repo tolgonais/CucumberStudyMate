@@ -29,7 +29,6 @@ public class CourseTest {
     @When("click on create")
     public void click_on_create() {
         coursesPage.createCourseButton.click();
-
     }
     @When("provides name,date, time")
     public void provides_name_date_time() {
@@ -37,7 +36,7 @@ public class CourseTest {
         coursesPage.courseName.sendKeys(faker.educator().university());
         coursesPage.description.sendKeys(faker.superhero().descriptor());
         coursesPage.pushclick.click();
-        coursesPage.pushclick.sendKeys("09/09/2023");
+        coursesPage.pushclick.sendKeys("10/28/2023");
         coursesPage.createButton.click();
 
     }

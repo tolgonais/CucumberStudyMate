@@ -35,7 +35,7 @@ public class GroupsPage {
     @FindBy(xpath = "(//*[contains(text(),'Create')])[3]")
     public WebElement createButtonAfterInput;
 
-    @FindBy(xpath = "(//div[@class='sc-brePNt PTZts'])[1]")
+    @FindBy(xpath = "(//div[@class='sc-jIILKH frksvl'])[1]")
     public WebElement createdGroup;
 
 //    @FindBy(xpath = "//div[@class='sc-jrcTuL ktiWgV actions']//button[text()='Create']")
