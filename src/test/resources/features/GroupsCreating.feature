@@ -1,6 +1,9 @@
 Feature: creating a Group
-  @loginTest
-  @groupTest
+
+
+
+  @groupsTest
+
     Scenario:
     Given the user is on Group page
     When the user clicks on Create  button

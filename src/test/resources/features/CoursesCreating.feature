@@ -1,5 +1,5 @@
 Feature: creating a Course
-  @loginTest
+  @coursesTest
   @groupTest
   Scenario:
     Given the user is on Course page
