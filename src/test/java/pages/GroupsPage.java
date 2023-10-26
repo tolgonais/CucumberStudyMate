@@ -44,7 +44,17 @@ public class GroupsPage {
 //    @FindBys(@FindBy(how = How.CLASS_NAME, using="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom sc-jIILKH jQpKBu css-1i17kim"))
 //    public List<WebElement> groupsList;
 
+    @FindBy(xpath = "(//div[@class='css-yys58j'])[1]")
+    public WebElement groupsOptions;
 
+    @FindBy(xpath = "(//li[text()='Delete group'])[1]")
+    public WebElement deleteGroupButton;
+
+    @FindBy(xpath = "//button[text()='Delete']")
+    public WebElement deleteConfirmation;
+
+    @FindBy(xpath = "(//p[@class='css-7zvtr8'])[3]")
+    public WebElement numberOfGroupsOnThePage;
     public void createAGroup(){
         Faker faker = new Faker();
 

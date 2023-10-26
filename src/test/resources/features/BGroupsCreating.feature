@@ -11,3 +11,11 @@ Feature: creating a Group
     And provides name,date,discription
     And click on create Group
     Then verify that the Group has been successfully created
+
+  @groupsTest
+  @regressionTest
+    Scenario:
+      When the user clicks on Group options button
+      And clicks on Delete Group button
+      And confirms deletion
+      Then verify that the group is successfully deleted

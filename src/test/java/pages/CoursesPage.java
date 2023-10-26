@@ -20,6 +20,19 @@ public class CoursesPage {
     public WebElement pushclick;
     @FindBy(xpath = "//button[text()='Create']")
     public WebElement createButton;
+
+
+    @FindBy(xpath = "(//div[@class='css-yys58j'])[1]")
+    public WebElement courseOptions;
+
+    @FindBy(xpath = "(//li[text()='Delete'])[1]")
+    public WebElement deleteCourseButton;
+
+    @FindBy(xpath = "(//p[@class='css-7zvtr8'])[3]")
+    public WebElement allCoursesOnThePage;
+
+    @FindBy(xpath = "//button[text()='Cancel']")
+    public WebElement toExit;
     public void createCourse(){
         createCourseButton.click();
         Faker faker=new Faker();

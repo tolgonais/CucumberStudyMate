@@ -7,3 +7,11 @@ Feature: creating a Course
     And provides name,date, time
     And click on create
     Then verify that the Course has been successfully created
+
+  @coursesTest
+  @regressionTest
+    Scenario:
+      When the user clicks on Course options
+      And clicks on Delete Course button
+      And confirms deletion
+      Then verify that the Course is successfully deleted
