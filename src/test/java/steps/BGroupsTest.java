@@ -35,7 +35,6 @@ public class BGroupsTest {
         groupsPage.descriptionInput.sendKeys(faker.superhero().power());
         groupsPage.dateInputCalendar.click();
         groupsPage.dateSelectInCalendar.click();
-        Thread.sleep(5000);
     }
     @When("click on create Group")
     public void click_on_create_Group(){
@@ -47,6 +46,24 @@ public class BGroupsTest {
         Assert.assertTrue("Group is not created", driver.getCurrentUrl().contains("groups"));
         System.out.println("Group is created successfully");
 
+    }
+
+
+
+    @When("the user clicks on Group options button")
+    public void the_user_clicks_on_group_options_button() {
+        groupsPage.groupsOptions.click();
+    }
+
+    @When("clicks on Delete Group button")
+    public void clicks_on_delete_group_button() {
+        groupsPage.deleteGroupButton.click();
+    }
+
+    @Then("verify that the group is successfully deleted")
+    public void verify_that_the_group_is_successfully_deleted() throws InterruptedException {
+        Thread.sleep(4000);
+        Assert.assertTrue(groupsPage.numberOfGroupsOnThePage.getText().contains("1"));
     }
 }
 

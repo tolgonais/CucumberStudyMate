@@ -55,7 +55,7 @@ public class StudentsPage {
     @FindBy(xpath = "(//button[@class='MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1yxmbwk'])[4]")
     public WebElement studentOptions;
 
-    @FindBy(xpath = "(//li[contains(text(), 'Edit')])[2]")
+    @FindBy(xpath = "(//li[text()='Edit'])[2]")
     public WebElement editStudentInfo;
 
     @FindBy(xpath = "//input[@name='email']")
@@ -70,7 +70,11 @@ public class StudentsPage {
     @FindBy(xpath = "(//p[@class='css-7zvtr8'])[3]")
     public WebElement fromShownStudentsToCheck;
 
+    @FindBy(xpath = "(//li[text()='Delete'])[2]")
+    public WebElement deleteButton;
 
+    @FindBy(xpath = "//button[text()='Delete']")
+    public WebElement deleteConfirm;
 
     public void createStudent() throws InterruptedException {
         Faker faker = new Faker();

@@ -45,6 +45,29 @@ public class SchedulePage {
     @FindBy(xpath = "//div[contains(text(),'● Event')]")
     public WebElement eventShowingOnCalendar;
 
+    @FindBy(xpath = "//div[@class='sc-brePNt jXLerF']")
+    public WebElement eventToDelete;
+
+    @FindBy(css = "#root > div > div.sc-AHaJN.jAJXaH > div > div > aside > div > div.sc-ikHGee.dYyEKm > div.sc-kZLDfD.dqzbXE > svg:nth-child(3)")
+    public WebElement deleteButton;
+
+    @FindBy(xpath = "//button[text()='Delete']")
+    public WebElement deleteConfirmation;
+
+    @FindBy(css = "#root > div > div.sc-AHaJN.jAJXaH > div > div > aside > div > div.sc-ikHGee.dYyEKm > div.sc-kZLDfD.dqzbXE > svg:nth-child(1) > path")
+    public WebElement editButton;
+
+    @FindBy(xpath = "//button[@class='MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeMedium css-slyssw']")
+    public WebElement dateEditField;
+
+    @FindBy(xpath = "(//button[@class='MuiButtonBase-root MuiPickersDay-root MuiPickersDay-dayWithMargin css-bekps4'])[15]")
+    public WebElement dateChosen;
+
+    @FindBy(xpath = "//time[@class='sc-eDZJfc homQCw']")
+    public WebElement editCheck;
+
+    @FindBy(xpath = "//div[@class='sc-gsGlKL cbfsid']")
+    public WebElement evetToEdit;
 
     public void createAnEvent(){
 
