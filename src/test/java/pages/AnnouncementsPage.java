@@ -23,7 +23,7 @@ public class AnnouncementsPage {
     @FindBy(id = "mui-component-select-groups")
     public WebElement groupsDropdown;
 
-    @FindBy(xpath = "//*[@id='menu-groups']/div[3]/ul/li[3]")
+    @FindBy(xpath = "//li[text()='TestGroup']")
     public WebElement groupChoise;
 
     @FindBy(xpath = "//button[text()='Add']")
@@ -31,6 +31,9 @@ public class AnnouncementsPage {
 
     @FindBy(xpath = "//p[@class='sc-jKvnYE cIrycx']")
     public WebElement createdAnnouncement;
+
+    @FindBy(xpath = "(//p[@class='css-7zvtr8'])[3]")
+    public WebElement allAnnouncementsOnThePage;
 
 
     public void addAnnouncement(){
